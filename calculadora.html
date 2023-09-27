@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Praticando Javascript - Calculadora</title>
+</head>
+<body>
+       
+</body>
+     
+	<script type="text/javascript">
+    
+		var numero1 = prompt("Insira o primeiro número: ");
+		var numero2 = prompt("Insira o segundo número: ");
+        var operacao = prompt("Qual operação deseja realizar? (digite + ou - ou * ou /) ");
+    
+		var resultadoOperacao = 0; 
+
+		if(operacao == "+")
+        resultadoOperacao = soma (numero1, numero2);
+
+        if(operacao == "-")
+        resultadoOperacao = diminui (numero1, numero2);
+
+        if(operacao == "*")
+        resultadoOperacao = multiplica (numero1, numero2);
+
+        if(operacao == "/")
+        resultadoOperacao = divide (numero1, numero2);
+
+        function soma(numero1, numero2){
+            return parseInt(numero1) + parseInt(numero2);
+        }
+        
+        function diminui(numero1, numero2){
+            return parseInt(numero1) - parseInt(numero2);
+        }
+
+        function multiplica(numero1, numero2){
+            return parseInt(numero1) * parseInt(numero2);
+        }
+
+        function divide(numero1, numero2){
+            return parseInt(numero1) / parseInt(numero2)
+        }
+
+        alert("O resultado é: " + resultadoOperacao);
+
+     	</script>
+</html>
