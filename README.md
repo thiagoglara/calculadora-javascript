@@ -1,2 +1,2 @@
 # calculadora-javascript
-Praticando Javascript - Calculadora
+Praticando a linguagem Javascript, criei uma Calculadora como forma de exercício.
